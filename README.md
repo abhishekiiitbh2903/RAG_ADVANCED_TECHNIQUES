@@ -34,6 +34,38 @@ This project implements an end-to-end **Retrieval-Augmented Generation (RAG)** s
      - **Non-Confidential Documents:**
        - **Sentence Transformer Embeddings** are used for embedding generation.
        - The **LLaMA model** is used for language generation.
+# Demo Images
+
+Below are the images which displays the app flow 
+
+# App Flow
+
+Below are the images that display the app flow with descriptions:
+
+
+<p align="center" style="display: flex; justify-content: center; gap: 20px;">
+  <figure style="text-align: center; width: 45%;">
+    <img src="https://github.com/abhishekiiitbh2903/RAG_ADVANCED_TECHNIQUES/blob/Version0.1/demo/S1.png" alt="Image 1" style="width: 100%; height: auto;">
+    <figcaption style="margin-top: 8px;">This is the starting point of the App showcasing the user to select whether they have a question from the Blue book or not. If Blue book, they can proceed with questions directly.</figcaption>
+  </figure>
+  <figure style="text-align: center; width: 45%;">
+    <img src="https://github.com/abhishekiiitbh2903/RAG_ADVANCED_TECHNIQUES/blob/Version0.1/demo/S2.png" alt="Image 2" style="width: 100%; height: auto;">
+    <figcaption style="margin-top: 8px;">Since the user selected "No," they are prompted to upload a file and select the mode of confidentiality. They selected "Not confidential," so the request is served on Llama hosted on Groq.</figcaption>
+  </figure>
+</p>
+
+<p align="center" style="display: flex; justify-content: center; gap: 20px;">
+  <figure style="text-align: center; width: 45%;">
+    <img src="https://github.com/abhishekiiitbh2903/RAG_ADVANCED_TECHNIQUES/blob/Version0.1/demo/S3.png" alt="Image 3" style="width: 100%; height: auto;">
+    <figcaption style="margin-top: 8px;">The user asked a question about the uploaded PDF in "Not confidential" mode, so we served their request on Llama hosted on Groq, generating a faster response.</figcaption>
+  </figure>
+  <figure style="text-align: center; width: 45%;">
+    <img src="https://github.com/abhishekiiitbh2903/RAG_ADVANCED_TECHNIQUES/blob/Version0.1/demo/S4.png" alt="Image 4" style="width: 100%; height: auto;">
+    <figcaption style="margin-top: 8px;">The user uploaded a PDF in "Confidential" mode. As a result, the request was served on Ollama, generating an answer with a slight delay due to additional security measures.</figcaption>
+  </figure>
+</p>
+
+
 
 3. **Vector Store Preparation:**
    - While the vector store is being prepared, the user cannot ask any questions until the process is complete.
